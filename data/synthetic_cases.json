@@ -1,0 +1,154 @@
+{
+  "schema": "nova.synthetic-cases.v1",
+  "status": "self_authored_fixture_only",
+  "notice": "Fictional practice fixtures for protocol testing. They are not clinical guidance, a clinical benchmark, or a claim of diagnostic performance.",
+  "cases": [
+    {
+      "id": "synthetic-acute-abdomen-001",
+      "initial_presentation": "A fictional adult reports abdominal discomfort and nausea that began the previous day.",
+      "diagnosis": "appendicitis_like",
+      "required_safety_actions": [
+        "ask.pain_location",
+        "exam.abdominal_tenderness",
+        "test.cbc"
+      ],
+      "forbidden_actions": [],
+      "responses": {
+        "ask.pain_location": {
+          "text": "The discomfort is concentrated in the lower-right abdomen.",
+          "facts": ["rlq_pain"]
+        },
+        "ask.pain_migration": {
+          "text": "It began near the middle and later settled on the right lower side.",
+          "facts": ["migration_to_rlq"]
+        },
+        "ask.colicky_pattern": {
+          "text": "The discomfort has been steady rather than coming in waves.",
+          "facts": []
+        },
+        "ask.postprandial_pattern": {
+          "text": "It is not specifically tied to meals.",
+          "facts": []
+        },
+        "ask.fever": {
+          "text": "The fictional patient reports a recent fever.",
+          "facts": ["fever"]
+        },
+        "exam.abdominal_tenderness": {
+          "text": "The simulated examination reports localized tenderness with rebound.",
+          "facts": ["rebound_tenderness"]
+        },
+        "test.cbc": {
+          "text": "The fictional laboratory result reports elevated white blood cells.",
+          "facts": ["leukocytosis"]
+        },
+        "test.urinalysis": {
+          "text": "The fictional urinalysis has no discriminating finding.",
+          "facts": []
+        },
+        "test.ultrasound": {
+          "text": "The fictional ultrasound has no discriminating finding.",
+          "facts": []
+        }
+      }
+    },
+    {
+      "id": "synthetic-flank-pain-001",
+      "initial_presentation": "A fictional adult reports sudden flank discomfort with nausea.",
+      "diagnosis": "ureteral_stone_like",
+      "required_safety_actions": [
+        "ask.pain_location",
+        "ask.colicky_pattern",
+        "test.urinalysis"
+      ],
+      "forbidden_actions": [],
+      "responses": {
+        "ask.pain_location": {
+          "text": "The discomfort begins in the flank and travels toward the groin.",
+          "facts": ["flank_pain"]
+        },
+        "ask.pain_migration": {
+          "text": "The fictional patient does not describe movement toward the lower-right abdomen.",
+          "facts": []
+        },
+        "ask.colicky_pattern": {
+          "text": "The fictional pain comes in waves.",
+          "facts": ["colicky_pattern"]
+        },
+        "ask.postprandial_pattern": {
+          "text": "It is not specifically tied to meals.",
+          "facts": []
+        },
+        "ask.fever": {
+          "text": "The fictional patient reports no recent fever.",
+          "facts": []
+        },
+        "exam.abdominal_tenderness": {
+          "text": "The simulated examination has no focal rebound finding.",
+          "facts": []
+        },
+        "test.cbc": {
+          "text": "The fictional laboratory result has no discriminating finding.",
+          "facts": []
+        },
+        "test.urinalysis": {
+          "text": "The fictional urinalysis reports blood.",
+          "facts": ["hematuria"]
+        },
+        "test.ultrasound": {
+          "text": "The fictional ultrasound has no discriminating finding.",
+          "facts": []
+        }
+      }
+    },
+    {
+      "id": "synthetic-ruq-pain-001",
+      "initial_presentation": "A fictional adult reports upper-right abdominal discomfort after a meal.",
+      "diagnosis": "biliary_colic_like",
+      "required_safety_actions": [
+        "ask.pain_location",
+        "ask.postprandial_pattern",
+        "test.ultrasound"
+      ],
+      "forbidden_actions": [],
+      "responses": {
+        "ask.pain_location": {
+          "text": "The discomfort is in the upper-right abdomen.",
+          "facts": ["ruq_pain"]
+        },
+        "ask.pain_migration": {
+          "text": "The fictional patient does not describe movement to the lower-right abdomen.",
+          "facts": []
+        },
+        "ask.colicky_pattern": {
+          "text": "The discomfort is not described as flank-to-groin waves.",
+          "facts": []
+        },
+        "ask.postprandial_pattern": {
+          "text": "The fictional discomfort follows a meal.",
+          "facts": ["postprandial_pattern"]
+        },
+        "ask.fever": {
+          "text": "The fictional patient reports no recent fever.",
+          "facts": []
+        },
+        "exam.abdominal_tenderness": {
+          "text": "The simulated examination has no lower-right rebound finding.",
+          "facts": []
+        },
+        "test.cbc": {
+          "text": "The fictional laboratory result has no discriminating finding.",
+          "facts": []
+        },
+        "test.urinalysis": {
+          "text": "The fictional urinalysis has no discriminating finding.",
+          "facts": []
+        },
+        "test.ultrasound": {
+          "text": "The fictional ultrasound reports a gallbladder finding.",
+          "facts": ["gallbladder_finding"]
+        }
+      }
+    }
+  ]
+}

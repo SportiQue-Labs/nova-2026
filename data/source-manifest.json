@@ -1,0 +1,27 @@
+{
+  "schema": "nova.source-manifest.v1",
+  "status": "self_authored_fixture_only",
+  "generated_at": "2026-09-22",
+  "current_data": {
+    "path": "synthetic_cases.json",
+    "origin": "self-authored fictional fixtures",
+    "contains_real_patient_data": false,
+    "clinical_validation": "not performed"
+  },
+  "candidates": [
+    {
+      "id": "synthea",
+      "status": "candidate_not_ingested",
+      "url": "https://github.com/synthetichealth/synthea",
+      "license": "Apache-2.0",
+      "intended_use": "generate clearly labeled synthetic practice records after guide-compatible schema design",
+      "admission_requirements": [
+        "pin exact release or commit and generator command",
+        "record seed and output hash",
+        "include upstream NOTICE",
+        "review FHIR export and terminology licenses separately",
+        "keep public samples and holdout scenarios separate"
+      ]
+    }
+  ]
+}
